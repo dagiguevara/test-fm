@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Parallel test suite]">
+  <test name="chrome tests(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="web_automation.projectx.VerifySearch">
+        <methods>
+          <include name="searhTest1"/>
+          <include name="openBrowser"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- web_automation.projectx.VerifySearch -->
+    </classes>
+  </test> <!-- chrome tests(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->
